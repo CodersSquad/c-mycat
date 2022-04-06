@@ -21,6 +21,6 @@ test: mycat
 	@echo Test 1 - Simple file
 	./mycat mycat.c
 	@echo Test 2 - 1 Gb file
-	openssl rand -out sample.txt -base64 $(( 2**30 * 3/4 ))
+	openssl rand -out sample.txt -base64 805306368
 	./mycat sample.txt > output.txt
 
