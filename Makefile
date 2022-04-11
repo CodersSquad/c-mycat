@@ -5,6 +5,8 @@ CFLAGS = -I.
 DEPS   =
 OBJ    = mycat.o
 
+build: mycat
+
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
